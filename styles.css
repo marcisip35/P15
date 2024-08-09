@@ -1,0 +1,26 @@
+.levelDisplayDialogue{
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    border-right: 1px solid black; /* cursor effect */
+    overflow: hidden;
+    display: inline-block;
+    white-space: pre-wrap; /* allows the text to wrap while preserving line breaks */
+}
+
+.container {
+    width: 60%; /* Width of the container for wrapping */
+    margin: 0 auto; /* Centering the container */
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
+}
+
+.typing {
+    animation: blink 0.75s step-end infinite; /* cursor animation */
+}
